@@ -1,0 +1,24 @@
+{
+
+  "manifest_version": 2,
+  "name": "yr.no search engine",
+  "description": "Adds a search engine that searches yr.no",
+  "version": "1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "55"
+    }
+  },
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Yr.no",
+      "search_url": "https://www.yr.no/soek.aspx?sted={searchTerms}",
+      "keyword": "weather",
+      "favicon_url": "https://www.yr.no/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+
+}
+
